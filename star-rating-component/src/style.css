@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e6e9fb;
+}
+#container {
+  width: 775px;
+  height: 394px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  border-radius: 16px;
+}
+#title {
+  height: 60px;
+  width: 458px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.17px;
+  text-align: center;
+}
+#star {
+  width: 548px;
+  height: 88px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#star img{
+  height: 84px;
+  width: 84px;
+}
+#text {
+  width: 647px;
+  height: 54px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+/* write your CSS here */
