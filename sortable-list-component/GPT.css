@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.skill-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.skill-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+.skill-item:hover {
+  background-color: #e9e9e9;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 300px;
+  border: 1px solid #ccc;
+  margin-top: 2px;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dragging {
+  opacity: 0.5;
+}

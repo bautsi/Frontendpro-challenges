@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        width: auto;
+        background-color: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        border: 0;
+        border-radius: 15px;
+        background-color: white;
+        height: 100px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p
+      draggable="true"
+      ondragstart="event.dataTransfer.setData('text/plain', 'This text may be dragged')"
+    >
+      This text <strong>may</strong> be dragged.
+    </p> -->
+    <div draggable="true" id="divv"></div>
+
+    <script>
+      const divv = document.getElementById("divv");
+      let pressed = false;
+
+      divv.addEventListener("drag", (event) => {
+        divv.style.display = "none";
+      });
+      divv.addEventListener("dragend", (event) => {
+        divv.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
